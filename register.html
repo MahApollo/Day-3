@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Registro</title>
+</head>
+<body>
+	<header>
+		<h1>Registro</h1>
+	</header>
+	<nav>
+		<ul>
+			<li>
+				<a href="index.html">
+					<h2>Home</h2>
+				</a>
+			</li>
+			<li>
+				<a href="payment.html">
+					<h2>Ir para pagamento e entrega</h2>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<form action="cadastrar" method="POST">
+			<fieldset>
+				<legend>Cadastro</legend>
+				<label for="idnome">Nome: </label>
+				<input type="text" name="nome" id="idnome"><br>
+				<label for="idsobrenome">Sobrenome: </label>
+				<input type="text" name="sobrenome" id="idsobrenome"><br>
+				<label for="idemail">E-mail: </label>
+				<input type="email" name="email" id="idemail" required><br>
+				<label for="idsenha">Senha: </label>
+				<input type="password" name="senha" id="idsenha"><br>
+				<label for="idnascimento">Data de nascimento: </label>
+				<input type="date" name="dtdenascimento" id="idnascimento"><br>
+				<label>Gênero: </label><br>
+				<input type="radio" name="genero" value="masculino" id="idmasculino">Masculino<br>
+				<input type="radio" name="genero" value="feminino" id="idfeminino">Feminino<br>
+				<input type="radio" name="genero" value="outro" id="idoutro">Outro<br>
+				<label>Animal de estimação: </label><br>
+				<input type="checkbox" name="gato" id="idgato">Gato<br>
+				<input type="checkbox" name="cachorro" id="idcachorro">Cachorro<br>
+				<input type="checkbox" name="peixe" id="idpeixe">Peixe<br>
+				<input type="checkbox" name="passaro" id="idpassaro">Passaro<br>
+				<label>Carros: </label>
+				<select>
+					<optgroup label="Luxo">
+						<option value="volvo" id="volvo">Volvo</option>
+						<option value="audi" id="audi">Audi</option>
+						<option value="bmw" id="bmw">BMW</option>
+					</optgroup>
+					<optgroup label="Economico">
+						<option value="fiat" id="fiat">Fiat</option>
+						<option value="volkswagen" id="volkswagen">Volkswagen</option>
+						<option value="renault" id="renault">Renault</option>
+					</optgroup>
+				</select><br>
+				<input type="checkbox" name="termo" id="idtermo">Eu aceito os termos e condições<br>
+				<input type="submit" value="Registrar!"> <input type="reset" value="Apagar">
+			</fieldset>
+		</form>
+	</main>
+	<footer>
+		<p>Site feito com amor!!!</p>
+	</footer>
+</body>
+</html>
